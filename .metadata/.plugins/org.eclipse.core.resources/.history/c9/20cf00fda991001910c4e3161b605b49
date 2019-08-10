@@ -1,0 +1,16 @@
+package com.vishist.interviewImplementingSerialVersionId;
+
+import java.io.Serializable;
+
+public class SerialisationWithSerialId implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4539734201617317772L;
+	//private static final long serialversionUID=1l;
+	
+	int i=10;
+	int j=20;
+	
+}

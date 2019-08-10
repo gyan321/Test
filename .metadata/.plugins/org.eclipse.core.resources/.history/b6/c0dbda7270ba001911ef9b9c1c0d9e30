@@ -1,0 +1,62 @@
+package producer_consumer;
+
+public class QueueData {
+
+	int num;
+	boolean valueSet = false;
+
+	public synchronized void put(int num) 
+	{
+		while (valueSet) {
+			try {
+
+				wait();
+			} catch (Exception e) {
+			}
+		} 
+		System.out.println("put :"+num);
+		this.num=num;
+		valueSet=true;
+		notify();	
+	}
+	
+	public synchronized void get( ) 
+	{
+		while (!valueSet) {
+			try {
+				wait();
+			} catch (Exception e) {
+			}
+		} 
+		System.out.println("get :"+num);		 
+		valueSet=false;
+		notify();	
+	}
+
+}
+
+
+class Consumer implements Runnable{
+
+	
+	QueueData queueObject;
+	
+	public Consumer(QueueData q){
+		this.queueObject=q;
+		Thread t=new Thread(this,"Consumer");
+		t.start();
+	}
+	
+	@Override
+	public void run() {
+		 while(true){
+			 queueObject.get();
+		 }
+		
+	}
+	
+	
+	 
+	
+	
+}

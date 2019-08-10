@@ -1,0 +1,5 @@
+package employee_id_sort;
+
+public class MyComparator implements Comparable<T> {
+
+}

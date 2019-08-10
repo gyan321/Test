@@ -1,0 +1,30 @@
+package wordsCount; 
+	 
+		public class CountingNoOfWords1
+		{ 
+			public static void main(String args[])
+			{ 
+				
+				 
+				String enteredString = " I am practicing logical program   ";
+				enteredString=enteredString.trim();
+		 
+				int spaceCount = 0; 
+				
+				//length() :return the total no. of characters.
+				for (int index = 0; index < enteredString.length()-1; index++)
+				{
+					if ((enteredString.charAt(index) == ' ') && (enteredString.charAt(index + 1) != ' '))
+					{
+						spaceCount++;
+		 
+					}
+				}
+				//// because no. of words =one more than the number of space
+		 		System.out.println("Number of words in a string = " +( spaceCount+1));
+			}
+		 
+
+	}
+
+ 

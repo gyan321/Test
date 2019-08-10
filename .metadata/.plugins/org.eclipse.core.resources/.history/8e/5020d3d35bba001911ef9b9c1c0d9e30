@@ -1,0 +1,11 @@
+package employee_id_sort;
+
+public class MyComparator implements Comparable<T> {
+
+	@Override
+	public int compareTo(T o) {
+		 
+		return 0;
+	}
+
+}

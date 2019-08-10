@@ -1,0 +1,27 @@
+
+public class SingletonClass {
+
+	byte testValue = 21;
+
+	private static SingletonClass singleObject;
+
+	private SingletonClass() {
+	}
+
+	static SingletonClass myInstance() {
+		if (singleObject == null) {
+			singleObject = new SingletonClass();
+		}
+
+		return singleObject;
+
+	}
+
+	public static void main(String[] args) {
+
+		SingletonClass firstObject =null;
+		System.out.println("value is" + firstObject.testValue);
+
+	}
+
+}

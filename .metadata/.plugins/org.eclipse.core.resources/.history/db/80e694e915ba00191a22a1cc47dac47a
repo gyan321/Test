@@ -1,0 +1,10 @@
+package com.practice.totalStringCharacters;
+
+public class TotalCharectersFinding {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

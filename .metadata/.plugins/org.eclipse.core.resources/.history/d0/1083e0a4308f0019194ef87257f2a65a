@@ -1,0 +1,41 @@
+package com.vishist.interviewImplementingRunnable;
+
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		// starting time 
+       // long start = System.currentTimeMillis();
+		 System.out.println(System.currentTimeMillis()); 
+		 
+		A myRunnableAObject=new A();
+		
+		//B myRunnableBObject=new B();
+		
+		Thread tA=new Thread(myRunnableAObject);
+		
+		tA.start();
+		
+       /* Thread tB=new Thread(myRunnableBObject);
+		
+		tB.start();
+		*/
+		
+		 for(int j=22;j<32;j++){
+			 System.out.println("Main class:"+j);
+		 }
+		 
+		 long end = System.currentTimeMillis(); 
+			
+		/* System.out.println("Counting to 10000000 takes " + 
+                 (end - start) + "ms"); */
+		 
+		 System.out.println(System.currentTimeMillis()); 
+
+	}
+	
+
+}

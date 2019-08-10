@@ -1,0 +1,36 @@
+package duplicate_characters;
+public class CountingNoOfWords
+		{ 
+			public static void main(String args[])
+			{ 
+				System.out.println("duplicates characters in the string :"  );
+				 
+				String enteredString = " welcome to the world of Java  ";
+				enteredString=enteredString.trim();
+				char[] charString=enteredString.toCharArray();
+		 
+				int count = 1;
+		 
+				for (int i = 0; i < charString.length - 1; i++)
+				{
+					
+					for(int j=i+1;j< charString.length;j++){
+						
+						if(charString[i]==charString[j]){
+							System.out.println(charString[i]+" ");
+						}
+					}
+					
+					
+					/*
+					if ((enteredString.charAt(index) == ' ') && (enteredString.charAt(index + 1) != ' '))
+					{
+						count++;
+		 
+					}*/
+				}
+		 		
+			}
+		 
+
+	}

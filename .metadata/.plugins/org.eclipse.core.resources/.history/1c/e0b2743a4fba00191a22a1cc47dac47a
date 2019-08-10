@@ -1,0 +1,40 @@
+package duplicate_characters;
+
+import java.util.HashSet;
+
+public class CountingNoOfWords
+		{ 
+			public static void main(String args[])
+			{ 
+				HashSet<String> set = new HashSet<String>();
+				System.out.println("duplicates characters in the string :"  );
+				 
+				String enteredString = " welcome to the world of Java  ";
+				enteredString=enteredString.trim();
+				char[] charString=enteredString.toCharArray();
+		 
+				int count = 1;
+		 
+				for (int i = 0; i < charString.length - 1; i++)
+				{
+					
+					for(int j=i+1;j< charString.length;j++){
+						
+						if(charString[i]==charString[j]){ 
+							 
+							set.add(new String(charString));
+							System.out.println(set);
+						}
+					}
+					
+					
+					 
+				}
+				for(String each:set){
+				System.out.println(each);
+				}
+		 		
+			}
+		 
+
+	}

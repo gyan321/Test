@@ -1,0 +1,16 @@
+package remove_duplicate_by_collection;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class RemoveDuplicate {
+
+	public static void main(String[] args) {
+		int givenArray[] = { 1, 5, 1, 6, 7, 11 };
+		
+		List<Integer> values=new ArrayList<Integer>(Arrays.asList(givenArray));
+		
+	}
+
+}

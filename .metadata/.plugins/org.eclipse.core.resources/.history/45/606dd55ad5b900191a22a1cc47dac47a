@@ -1,0 +1,22 @@
+
+public class SingletonClass {
+	
+	
+	private static SingletonClass singleObject=new SingletonClass();
+	
+	private SingletonClass(){}
+	
+	static SingletonClass myInstance(){
+		return singleObject;
+	}
+	public static void main(String[] args) {
+		
+		SingletonClass firstObject=new SingletonClass();
+		SingletonClass Object=new SingletonClass();
+		 
+		
+		
+
+	}
+
+}

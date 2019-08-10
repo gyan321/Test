@@ -1,0 +1,25 @@
+package perfectnumber_check;
+
+import java.util.Scanner;
+
+public class CheckPerfectNumber {
+	
+	int remainder;
+	int sum=0;
+	
+
+	public static void main(String[] args) {
+		
+		Scanner scanObject=new Scanner(System.in);
+		System.out.println("enter any value:");
+		
+		int enteredObject=scanObject.nextInt();
+		
+		for(int eachValue=0;eachValue-1){
+			
+		}
+		 
+
+	}
+
+}

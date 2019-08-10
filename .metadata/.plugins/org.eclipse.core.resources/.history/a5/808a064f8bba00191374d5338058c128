@@ -1,0 +1,29 @@
+package com.vishist.interviewImplementingSerialVersionId.copy;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+public class Sender implements Serializable{
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1234334L;
+	int i=11;
+	int j=20;
+	 
+	public static void main(String[] args) throws Exception {
+		 
+		Sender sender=new Sender();
+		
+		System.out.println("during Serialisation----i: "+sender.i +"j"+sender.j);
+		
+		FileOutputStream fos=new FileOutputStream("abc.ser",true);
+		ObjectOutputStream oos=new ObjectOutputStream(fos);
+		
+		oos.writeObject(sender);
+
+	}
+
+}

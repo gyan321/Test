@@ -1,0 +1,13 @@
+ 
+public class SingletonRelatedClass {
+
+	public static void main(String[] args) {
+		
+		SingletonClass obj= null ;
+		System.out.println("value is"+obj.testValue);
+		object2.myInstance();
+
+	}
+
+}
+ 

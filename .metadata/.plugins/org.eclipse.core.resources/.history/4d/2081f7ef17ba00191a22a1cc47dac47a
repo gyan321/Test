@@ -1,0 +1,28 @@
+package com.derivates.duplicateWord; 
+	 
+		public class CountingNoOfWords
+		{ 
+			public static void main(String args[])
+			{ 
+				
+				 
+				String enteredString = " welcome to the world of Java";
+				enteredString.trim();
+		 
+				int count = 1;
+		 
+				for (int index = 0; index < enteredString.length() - 1; index++)
+				{
+					if ((enteredString.charAt(index) == ' ') && (enteredString.charAt(index + 1) != ' '))
+					{
+						count++;
+		 
+					}
+				}
+		 		System.out.println("Number of words in a string = " + count);
+			}
+		 
+
+	}
+
+ 

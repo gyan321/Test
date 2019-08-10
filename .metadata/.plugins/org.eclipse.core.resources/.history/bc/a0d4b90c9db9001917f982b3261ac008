@@ -1,0 +1,8 @@
+
+public class TooYoungException extends Exception {
+
+	TooYoungException(String message){
+		System.out.println(message);
+	}
+	
+}

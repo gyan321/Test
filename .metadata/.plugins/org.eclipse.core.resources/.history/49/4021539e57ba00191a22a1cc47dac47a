@@ -1,0 +1,10 @@
+package employee_id_sort;
+
+public class SortingOnEmployId {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

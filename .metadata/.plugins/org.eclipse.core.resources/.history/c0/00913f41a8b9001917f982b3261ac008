@@ -1,0 +1,9 @@
+
+public class TooOldException extends  Exception {
+	
+	TooOldException(String message){
+		System.out.println(message);
+	}
+	
+
+}

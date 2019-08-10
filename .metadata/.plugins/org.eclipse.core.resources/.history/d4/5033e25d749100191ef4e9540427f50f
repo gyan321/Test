@@ -1,0 +1,20 @@
+package com.vishist.interviewImplementingSerialVersionId;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+
+public class Reciever {
+
+	public static void main(String[] args) throws Exception {
+	 
+FileInputStream fis=new FileInputStream("abc.ser");
+ObjectInputStream ois=new ObjectInputStream(fis);
+SerialisationWithSerialId serialObject2 =(SerialisationWithSerialId)ois.readObject();
+
+System.out.println("after deserialisation:- i :"+serialObject2.i+"  j:"+serialObject2.j);
+
+
+		
+	}
+
+}

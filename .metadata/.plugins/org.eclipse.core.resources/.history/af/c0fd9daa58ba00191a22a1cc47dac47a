@@ -1,0 +1,22 @@
+package employee_id_sort;
+
+public class Employee {
+	
+	String name;
+	byte eid;
+	 
+	Employee(String name,byte eid){
+		this.name=name;
+		this.eid=eid;
+	}
+	
+	@Override
+	public String toString(){
+		return this.name+"---"+this.eid;
+	}
+	
+	public static void main(String[] args) {
+		 
+	}
+
+}

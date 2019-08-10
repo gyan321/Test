@@ -1,0 +1,14 @@
+package employee_id_sort;
+
+public class SortingOnEmployId {
+	
+	String name;
+	byte id;
+	
+	Empl
+
+	public static void main(String[] args) {
+		 
+	}
+
+}

@@ -1,0 +1,10 @@
+package remove_duplicate_by_collection;
+
+public class RemoveDuplicate {
+
+	public static void main(String[] args) {
+		int givenArray[] = { 1, 5, 1, 6, 7, 11 };
+		
+	}
+
+}

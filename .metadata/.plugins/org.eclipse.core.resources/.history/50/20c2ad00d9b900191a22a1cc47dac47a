@@ -1,0 +1,10 @@
+package perfectnumber_check;
+
+public class CheckPerfectNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

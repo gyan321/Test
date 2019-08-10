@@ -1,0 +1,45 @@
+package com.vishist.practice.removing_duplicates_no;
+
+public class DuplicatesRemoval {
+
+	int i, j, k;
+
+	public void removeDuplicate(int[] passedArray, int arraySize) {
+
+		 
+		for (i = 0; i < arraySize ; i++) {
+
+			for (j = i + 1; j < arraySize; ) {
+				 if(passedArray[j] == passedArray[i])
+		            {
+		                for(k = j; k < arraySize; k++)
+		                {
+		                	passedArray[k] =passedArray[k+1];
+		                }
+		                arraySize--;
+		            }
+		            else
+		            {
+		                j++;
+		            }
+		        }
+				 
+		 
+
+		}
+
+	}
+	 
+
+	public static void main(String[] args) {
+
+		int givenArray[] = { 1, 5, 1, 6, 7, 11 };
+		int arraySize = givenArray.length;
+		DuplicatesRemoval duplicateObject = new DuplicatesRemoval();
+
+		duplicateObject.removeDuplicate(givenArray, arraySize);
+
+	}
+
+}
+

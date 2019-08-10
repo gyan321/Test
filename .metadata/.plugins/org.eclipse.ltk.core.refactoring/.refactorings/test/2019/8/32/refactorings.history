@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;CountingNoOfWords.java&apos; to &apos;interviewPreparation/src/wordsCount&apos;&#x0D;&#x0A;- Original project: &apos;test&apos;&#x0D;&#x0A;- Destination element: &apos;interviewPreparation/src/wordsCount&apos;&#x0D;&#x0A;- Original element: &apos;com.derivates.duplicateWord.CountingNoOfWords.java&apos;" description="Copy compilation unit" destination="=interviewPreparation/src&lt;wordsCount" element1="/src&lt;com.derivates.duplicateWord{CountingNoOfWords.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1565295152674" units="1" version="1.0"/>
+</session>

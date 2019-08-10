@@ -1,0 +1,26 @@
+package com.vishist.interviewImplementingSerialVersionId.copy;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+
+import sun.rmi.server.DeserializationChecker;
+
+ 
+
+public class Reciever implements Deserialization { 
+
+	int i=11;
+	int j=200;
+	
+	public static void main(String[] args) throws Exception {
+
+		FileInputStream fis = new FileInputStream("abc.ser");
+		ObjectInputStream ois = new ObjectInputStream(fis);
+	 
+		Sender sender=(Sender)ois.readObject();
+
+		System.out.println("after deserialisation:- i :" + sender.i + "  j:" + sender.j);
+
+	}
+
+}

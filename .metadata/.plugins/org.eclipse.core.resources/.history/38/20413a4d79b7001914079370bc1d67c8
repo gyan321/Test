@@ -1,0 +1,24 @@
+class TestCustomException1{  
+  
+   static void validate(int age) throws Exception {  
+     if(age<18)  
+      throw new InvalidAgeException("not valid");  
+     else  
+      System.out.println("welcome to vote");  
+   }  
+     
+   public static void main(String args[]){  
+    
+      validate(13);  
+      }catch(Exception m){System.out.println("Exception occured: "+m);}  
+  
+      System.out.println(" Sorry not eligible");  
+  }  
+}  
+
+@SuppressWarnings("serial")
+class InvalidAgeException extends Exception{  
+	 InvalidAgeException(String s){  
+	  super(s);  
+	 }  
+	}

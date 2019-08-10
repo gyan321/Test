@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.vishist.interviewProgress&apos; to &apos;com.vishist.interviewImplementingThread&apos;&#x0D;&#x0A;- Original project: &apos;interviewPreparation&apos;&#x0D;&#x0A;- Original element: &apos;interviewPreparation/src/com.vishist.interviewProgress&apos;&#x0D;&#x0A;- Renamed element: &apos;interviewPreparation/src/com.vishist.interviewImplementingThread&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.vishist.interviewProgress&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.vishist.interviewProgress" name="com.vishist.interviewImplementingThread" qualified="false" references="true" stamp="1560491420284" textual="false" version="1.0"/>
+</session>

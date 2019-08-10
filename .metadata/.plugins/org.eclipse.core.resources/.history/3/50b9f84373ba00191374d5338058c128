@@ -1,0 +1,26 @@
+package producer_consumer;
+
+class Producer implements Runnable{
+
+	
+	QueueData queueObject;
+	
+	public Producer(QueueData q){
+		this.queueObject=q;
+		Thread t=new Thread(this,"Consumer");
+		t.start();
+	}
+	
+	@Override
+	public void run() {
+		 
+		 while(true){
+			 queueObject.get();
+			 try{
+				 Thread.sleep(1000); }catch(Exception e){ }
+		 }
+		
+	} 
+	
+	
+}

@@ -1,0 +1,47 @@
+
+public class QuickSort2 {
+
+	int j;
+	int i;
+	int [] arr={15,9,7,13,12,16,4,18,11}; 
+	int leng=arr.length; 
+	
+	
+	public void  quickSort(int l,int h){
+		if(l<h){
+			this.j=partition(l,h);
+			quickSort(l,j);
+			quickSort(j+1,h);
+					
+		}
+	}
+
+	private int partition(int l, int h) {
+		 
+		int pivot=arr[l];
+		i=l;
+		j=h;
+		
+		while(i<j){
+			
+			do{
+				i++;
+			}while(arr[i]<=pivot);
+			
+			do{
+				j--;
+			}while(arr[j]>pivot);
+		}
+		 
+		
+		return 0;
+	}
+	
+	
+	public static void main(String[] args) {
+		
+				QuickSort2 qsm=new QuickSort2(); 
+
+			}
+
+}

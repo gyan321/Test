@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean name="triangle" class="applicationContext.Triangle"></bean>
+    
+    <!--constructor injection -->
+    
+    <!-- <bean name="triangle2" class="com.vishist.constructorInjection.Triangle">    
+    <constructor-arg   value="red"></constructor-arg>
+    <constructor-arg  value="HUGE"></constructor-arg>
+    <property name="triangleSide" ref="traingleSide"></property>
+    </bean>
+    
+    <bean id="traingleSide" class="com.applicationContext.setterInjection.TriangleSide">    
+    <property name="sideLength" value="22222"></property>
+    </bean> -->
+    
+    <bean name="triangle2" class="com.vishist.constructorInjection.Triangle">   
+     
+    <constructor-arg   value="red"></constructor-arg>
+    <constructor-arg  value="HUGE"></constructor-arg>
+    
+    <property name="triangleSide" >
+    
+    <bean class="com.applicationContext.setterInjection.TriangleSide">
+    <property name="sideLength" value="22222"></property>
+    
+    </bean>
+    
+    </property>
+    </bean>
+    
+   
+    
+    
+
+</beans>

@@ -1,0 +1,11 @@
+
+public class SingletonRelatedClass {
+
+	public static void main(String[] args) {
+		
+		SingletonClass object2=new SingletonClass();
+		// TODO Auto-generated method stub
+
+	}
+
+}

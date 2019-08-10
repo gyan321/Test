@@ -1,0 +1,32 @@
+package duplicate_characters;
+
+class CountingNoOfWords 
+{
+    public static void main(String[] args) 
+    {   
+
+        String str = "HelloJava";
+        char[] ch = str.toCharArray();
+        int i=0,j=0;
+        for(i=0;i<ch.length;i++)
+        {
+            int count = 0 ;
+            for( j = i;j<ch.length;j++)
+            { 
+                if(ch[i] == ch[j] )                                           
+                {
+                    count++;
+                }
+            }
+            if(count != 0)           
+            {
+                System.out.print(str.charAt(i) + " Occured " + count + " time");
+            }
+
+
+        }
+
+
+
+    }
+}

@@ -1,0 +1,27 @@
+package employee_id_sort;
+
+public class Employee {
+	
+	String name;
+	int eid;
+	 
+	Employee(String name,int eid){
+		this.name=name;
+		this.eid=eid;
+	}
+	
+	@Override
+	public String toString(){
+		return this.name+"---"+this.eid;
+	}
+	
+	public static void main(String[] args) {
+		Employee e1=new Employee("aaa",11);
+		Employee e2=new Employee("ccc",21);
+		Employee e3=new Employee("eee",10);
+		Employee e4=new Employee("sss",5);
+		
+		 
+	}
+
+}
